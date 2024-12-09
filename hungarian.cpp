@@ -493,7 +493,7 @@ hungarian(const Container<Container<T,Args...>>& original,
     int path_row_0, path_col_0; //temporary to hold the smallest uncovered value
     
     // Array for the augmenting path algorithm
-    std::vector<std::vector<int>> path (sz+1, std::vector<int>(2, 0));
+    std::vector<std::vector<int>> path (2*sz, std::vector<int>(2, 0));
     
     /* Now Work The Steps */
     bool done = false;
